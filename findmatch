@@ -1,0 +1,52 @@
+#include<bits/stdc++.h>
+using namespace std;
+ 
+DB <person> {}
+Class person
+{
+ string name;
+  string gender;
+  string father;
+  string mother;
+      
+ void get sister()
+ {
+      list sis[];
+      for p in  DB:
+         if p[father] ==father   && p[mother]==mother &&p[name]!= name && p[gender] =="female":
+            sis.append(p)
+  }
+  void get brother()
+  {
+      list sis[];
+      for p in  DB:
+         if p[father] ==father   && p[mother]==mother &&p[name]!= name && p[gender] =="female":
+            bro.append(p)
+    }        
+  void get matches
+  {
+      list matches=[];
+      if gender=="male"
+        fsis =DB[father].getsister()
+         for i in DB:
+           if i[mother] in fsis && gender=="female"
+            matches.append(i)
+         mbro= DB[mother].getbrother()
+          for i in DB:
+            if i[father] in mbro && gender=="female"
+              matches.append(i)
+              
+              
+          if gender=="female"
+        fsis =DB[father].getsister()
+         for i in DB:
+           if i[mother] in fsis && gender=="male"
+            matches.append(i)
+         mbro= DB[mother].getbrother()
+          for i in DB:
+            if i[father] in mbro && gender=="male"
+              matches.append(i)
+            
+   }     
+   return matches;
+  } 
